@@ -4,7 +4,7 @@ import './style.css'
 function Container() {
 
     return (
-        <div className="uk-container">
+        <div className="uk-section">
             Container
         </div>
     )
