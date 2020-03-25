@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import API from '../utils/API';
+// import React, { useEffect } from 'react';
+// import API from '../utils/API';
 
-class Test extends Component {
-    state = {}
-    componentDidMount() {
-        this.findBooks();
-    }
+// function Test () {
 
-    findBooks = () => {
-        API.populateLibrary()
-        .then(res => {
-            console.log(res);
-        })
-        .catch(err => console.log(err));
-    }
+//     useEffect(() => {
+//         loadBooks()
+//     }, [])
 
-    render() {
-        return (
-            <h1>test</h1>
-        );
-    }
-}
+//     // Loads all books and sets them to books
+//     function loadBooks() {
+//         API.populateLibrary()
+//             .then(res =>
+//                 console.log(res)
+//             )
+//             .catch(err => console.log(err));
+//     };
 
-export default Test;
+//     return (
+//         <h1>test</h1>
+//     );
+// }
+
+
+// export default Test;

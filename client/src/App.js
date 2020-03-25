@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
-import Test from './components/test'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
-    <Test />
+    <NavBar />
   );
 }
 
