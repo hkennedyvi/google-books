@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import Container from './components/Container';
+import ResultsSection from './components/ResultsSection';
 import Banner from './components/Banner';
 import Search from './components/Search'
 
@@ -10,7 +10,7 @@ function App() {
     <NavBar />
     <Banner />
     <Search />
-    <Container />
+    <ResultsSection />
     </div>
   );
 }
