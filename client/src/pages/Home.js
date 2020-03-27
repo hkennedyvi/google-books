@@ -17,6 +17,7 @@ function Home() {
     // function loadBooks() {
     //     API.populateLibrary()
     //         .then(res => {
+
     //             // console.log(res.data.items);
     //             setBooks(res.data.items);
     //             // console.log(books);
@@ -26,15 +27,17 @@ function Home() {
     // };
 
     function handleInputChange(event) {
-        let userSearch = event.target.value;
-        setSearchTerm(userSearch);
-        console.log("current search", searchTerm);
+        const { value } = event.target;
+        console.log("VALUE" + value);
+        setSearchTerm({ searchTerm, value });
     }
 
     function handleSearch(event) {
         event.preventDefault();
-        console.log("YEELLLLOOOO");
-        console.log(event.target.value);
+        API.searchBooks(searchTerm.value)
+            .then(res => {
+                setBooks(res.data.items);
+            });
     }
 
     return (

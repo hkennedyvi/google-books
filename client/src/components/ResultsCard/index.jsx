@@ -1,8 +1,8 @@
 import React from 'react';
 
 function ResultsCard(props) {
-    console.log("RESULTS CARD PROPS");
-    console.log(props);
+    // console.log("RESULTS CARD PROPS");
+    // console.log(props);
 
     return (
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
