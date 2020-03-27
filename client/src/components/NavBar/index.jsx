@@ -12,7 +12,7 @@ function NavBar() {
 
                     <ul className="uk-navbar-nav">
                         <li><a href="/">SEARCH</a></li>
-                    <li><a href="/saved">SAVED</a></li>
+                        <li><a href="/saved">SAVED</a></li>
                     </ul>
                 </div>
             </div>
