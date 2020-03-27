@@ -4,7 +4,7 @@ import './Search.css';
 function Search(props) {
 
     return (
-        <div class="uk-section uk-section-small uk-section-muted search">
+        <div className="uk-section uk-section-small uk-section-muted search">
         <form action="">
             <input 
             className="uk-input uk-form-width-large" type="text" placeholder="Find a book..." 

@@ -3,7 +3,7 @@ import './ResultsSection.css';
 import ResultsCard from '../ResultsCard';
 
 function ResultsSection(props) {
-    console.log(props);
+
     return (
         <div id="results-main" className="uk-section">
             {props.books.map(book => {

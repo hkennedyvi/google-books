@@ -4,22 +4,22 @@ import './Banner.css'
 function Banner() {
 
     return (
-        <div class="uk-section uk-section-small uk-section-muted">
-            {/* <div class="uk-container"> */}
+        <div className="uk-section uk-section-small uk-section-muted">
+            {/* <div className="uk-container"> */}
 
-            <h1 class="uk-text-center">MY LIBRARY</h1>
+            <h1 className="uk-text-center">MY LIBRARY</h1>
 
-            <div class="uk-flex uk-flex-center">
-                <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-text-center">
-                    <i class="banner-icon fas fa-eye"></i>
+            <div className="uk-flex uk-flex-center">
+                <div className="uk-width-1-4 uk-card uk-card-default uk-card-body uk-text-center">
+                    <i className="banner-icon fas fa-eye"></i>
                     <p>FIND.</p>
                 </div>
-                <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-margin-left uk-text-center">
-                    <i class="banner-icon fas fa-save"></i>
+                <div className="uk-width-1-4 uk-card uk-card-default uk-card-body uk-margin-left uk-text-center">
+                    <i className="banner-icon fas fa-save"></i>
                     <p>SAVE.</p>
                 </div>
-                <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-margin-left uk-text-center">
-                    <i class="banner-icon fas fa-book-reader"></i>
+                <div className="uk-width-1-4 uk-card uk-card-default uk-card-body uk-margin-left uk-text-center">
+                    <i className="banner-icon fas fa-book-reader"></i>
                     <p>READ.</p>
                 </div>
             </div>
