@@ -12,6 +12,7 @@ function ResultsSection(props) {
                     title={book.volumeInfo.title} 
                     author={book.volumeInfo.authors} 
                     description={book.volumeInfo.description}
+                    link={book.volumeInfo.previewLink}
                     />
                     )
             })

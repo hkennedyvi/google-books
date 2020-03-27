@@ -16,6 +16,7 @@ function ResultsCard(props) {
                     <p>AUTHOR: {props.author}</p>
                     <p>DESCRIPTION: {props.description}</p>
                     <button class="uk-button-primary">SAVE</button>
+                    <a href={props.link}><button class="uk-button-danger">PREVIEW</button></a>
                 </div>
             </div>
         </div>
