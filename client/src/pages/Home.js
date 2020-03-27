@@ -28,7 +28,6 @@ function Home() {
 
     function handleInputChange(event) {
         const { value } = event.target;
-        console.log("VALUE" + value);
         setSearchTerm({ searchTerm, value });
     }
 

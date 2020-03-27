@@ -10,13 +10,10 @@ function NavBar() {
 
                 <div className="uk-navbar-right">
 
-                    <div className="uk-navbar-item">
-                        {/* Removed javascript:void(0) from form action below */}
-                        <form action="">
-                            <input className="uk-input uk-form-width-small" type="text" placeholder="Find a book..." />
-                            <button className="uk-button uk-button-default"><i className="fas fa-search"></i></button>
-                        </form>
-                    </div>
+                    <ul className="uk-navbar-nav">
+                        <li><a href="/">SEARCH</a></li>
+                    <li><a href="/saved">SAVED</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
