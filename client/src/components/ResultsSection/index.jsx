@@ -8,13 +8,14 @@ function ResultsSection(props) {
         <div id="results-main" className="uk-section">
             {props.books.map(book => {
                 return (
-                <ResultsCard 
-                    title={book.volumeInfo.title} 
-                    author={book.volumeInfo.authors} 
-                    description={book.volumeInfo.description}
-                    link={book.volumeInfo.previewLink}
+                    <ResultsCard
+                        title={book.volumeInfo.title}
+                        author={book.volumeInfo.authors}
+                        description={book.volumeInfo.description}
+                        link={book.volumeInfo.previewLink}
+                        thumbnail={book.volumeInfo.imageLinks}
                     />
-                    )
+                )
             })
             }
         </div>
