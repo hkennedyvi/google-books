@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResultsCard.css';
 
 function ResultsCard(props) {
 
@@ -10,8 +11,8 @@ function ResultsCard(props) {
             </div>
             <div>
                 <div className="uk-card-body">
-                    <h3 className="uk-card-title">TITLE: {props.title}</h3>
-                    <p>AUTHOR: {props.author}</p>
+                    <h3 className="uk-card-title">{props.title}</h3>
+                    <p>AUTHOR: {props.author[0]}</p>
                     <p>DESCRIPTION: {props.description}</p>
                     <button className="uk-button-primary">SAVE</button>
                     <a href={props.link}><button className="uk-button-danger">PREVIEW</button></a>

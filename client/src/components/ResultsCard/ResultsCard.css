@@ -1,0 +1,25 @@
+.uk-button-primary {
+    padding: 20px;
+    width: 150px;
+    background-color: darkcyan;
+}
+
+.uk-button-primary:hover {
+    background-color: lightgrey;
+    color: darkcyan;
+    border: darkcyan solid 1px;
+}
+
+.uk-button-danger {
+    padding: 20px;
+    width: 150px;
+    background-color: white;
+    color: darkcyan;
+    border: darkcyan solid 1px;
+}
+
+.uk-button-danger:hover {
+    background-color: grey;
+    color: white;
+    border: grey solid 1px;
+}

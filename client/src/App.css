@@ -1,3 +1,8 @@
 html {
     background-color: darkcyan;
 }
+
+h1, li, p, h3, button {
+    font-family: 'Sen', sans-serif;
+    font-weight: bolder;
+}
