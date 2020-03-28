@@ -3,7 +3,7 @@ import './NavBar.css'
 
 function NavBar() {
     return (
-        <nav className="uk-navbar-container uk-margin" uk-navbar>
+        <nav className="uk-navbar-container uk-margin">
             <div className="uk-navbar-left">
 
                 <a className="uk-navbar-item uk-logo" href="/"><i className="fas fa-book"></i></a>

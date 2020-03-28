@@ -4,7 +4,7 @@ import './ResultsCard.css';
 function ResultsCard(props) {
 
     return (
-        <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
+        <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin">
             <div className="uk-card-media-left uk-cover-container">
                 {/* Image needs fixing, floats above body content */}
                 {/* <img src={props.thumbnail} alt="" uk-cover /> */}

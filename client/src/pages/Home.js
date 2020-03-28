@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import API from '../utils/API';
 import SearchJumbo from '../components/SearchJumbo';
 import SearchBar from '../components/SearchBar';
