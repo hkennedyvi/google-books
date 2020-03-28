@@ -1,28 +1,30 @@
-import React, { useEffect } from 'react';
-import Banner from '../components/Banner';
-import NavBar from '../components/NavBar';
-import Search from '../components/Search';
-import ResultsCard from '../components/ResultsCard';
+import React, { useEffect, useState } from 'react';
+import SavedJumbo from '../components/SavedJumbo';
 import ResultsSection from '../components/ResultsSection';
 import API from '../utils/API';
 
 function Saved() {
+
+    const [books, setBooks] = useState([]);
 
     useEffect(() => {
         loadSavedBooks()
     }, [])
 
     function loadSavedBooks() {
-        API.getBooks()
+        API.populateLibrary()
             .then(res => {
-                console.log(res.data);
+                setBooks(res.data.items);
             }
             )
             .catch(err => console.log(err));
     };
 
     return (
-        <h1>SAVED BOOKS</h1>
+        <div>
+            <SavedJumbo />
+            <ResultsSection books={books} />
+        </div>
     )
 }
 

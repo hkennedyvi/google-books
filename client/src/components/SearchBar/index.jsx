@@ -1,7 +1,7 @@
 import React from 'react';
-import './Search.css';
+import './SearchBar.css';
 
-function Search(props) {
+function SearchBar(props) {
 
     return (
         <div className="uk-section uk-section-small uk-section-muted search">
@@ -20,4 +20,4 @@ function Search(props) {
     )
 }
 
-export default Search;
+export default SearchBar;

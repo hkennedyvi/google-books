@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from '../utils/API';
-import Banner from '../components/Banner';
-import Search from '../components/Search';
+import SearchJumbo from '../components/SearchJumbo';
+import SearchBar from '../components/SearchBar';
 import ResultsSection from '../components/ResultsSection';
 
 function Home() {
@@ -41,8 +41,8 @@ function Home() {
 
     return (
         <div>
-            <Banner />
-            <Search handleSearch={handleSearch} handleInputChange={handleInputChange} />
+            <SearchJumbo />
+            <SearchBar handleSearch={handleSearch} handleInputChange={handleInputChange} />
             <ResultsSection books={books} />
         </div>
     )
