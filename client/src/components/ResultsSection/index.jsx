@@ -9,11 +9,11 @@ function ResultsSection(props) {
             {props.books.map(book => {
                 return (
                     <ResultsCard
-                        title={book.volumeInfo.title}
-                        author={book.volumeInfo.authors}
-                        description={book.volumeInfo.description}
-                        link={book.volumeInfo.previewLink}
-                        thumbnail={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "https://picsum.photos/200"}
+                        title={book.title ? book.title : book.volumeInfo.title}
+                        author={book.author ? book.author : book.volumeInfo.authors}
+                        description={book.synopsis ? book.synopsis : book.volumeInfo.description}
+                        link={book.preview ? book.preview : book.volumeInfo.previewLink}
+                        thumbnail={book.thumbnail ? book.thumbnail : book.volumeInfo.imageLinks.thumbnail ? book.volumeInfo.imageLinks.thumbnail : "https://picsum.photos/200"}
                     />
                 )
             })

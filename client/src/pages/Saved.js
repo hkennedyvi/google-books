@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SavedJumbo from '../components/SavedJumbo';
-import ResultsSection from '../components/ResultsSection';
+import SavedSection from '../components/SavedSection';
 import API from '../utils/API';
 
 function Saved() {
@@ -14,21 +14,15 @@ function Saved() {
     function loadSavedBooks() {
 
         API.getBooks().then(res => {
-            console.log(res);
-        });
-
-        API.populateLibrary()
-            .then(res => {
-                setBooks(res.data.items);
-            }
-            )
+            setBooks(res.data);
+        })
             .catch(err => console.log(err));
     };
 
     return (
         <div>
             <SavedJumbo />
-            <ResultsSection books={books} />
+            <SavedSection books={books} />
             <div className="uk-text-center">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
     )

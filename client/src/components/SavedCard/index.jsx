@@ -1,7 +1,7 @@
 import React from 'react';
-import './ResultsCard.css';
+import './SavedCard.css';
 
-function ResultsCard(props) {
+function SavedCard(props) {
 
     return (
         <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin">
@@ -12,7 +12,7 @@ function ResultsCard(props) {
             <div>
                 <div className="uk-card-body">
                     <h3 className="uk-card-title">{props.title}</h3>
-                    <p>AUTHOR: {props.author[0]}</p>
+                    <p>AUTHOR: {props.author}</p>
                     <p>DESCRIPTION: {props.description}</p>
                     <button className="uk-button-primary">SAVE</button>
                     <a href={props.link}><button className="uk-button-danger">PREVIEW</button></a>
@@ -22,4 +22,4 @@ function ResultsCard(props) {
     )
 }
 
-export default ResultsCard;
+export default SavedCard;
