@@ -14,7 +14,11 @@ function SavedCard(props) {
                     <h3 className="uk-card-title">{props.title}</h3>
                     <p>AUTHOR: {props.author}</p>
                     <p>DESCRIPTION: {props.description}</p>
-                    <button className="uk-button-primary">SAVE</button>
+                    <button className="uk-button-primary"
+                    onClick={(event)=>{props.handleDelete(event)}}
+                    id={props.id}
+                    // key={props.id}
+                    >DELETE</button>
                     <a href={props.link}><button className="uk-button-danger">PREVIEW</button></a>
                 </div>
             </div>
