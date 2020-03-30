@@ -8,6 +8,7 @@ function Home() {
 
     const [books, setBooks] = useState([]);
     const [searchTerm, setSearchTerm] = useState();
+    // const [newBook, setNewBook] = useState();
 
     // useEffect(() => {
     //     loadBooks()
@@ -39,11 +40,25 @@ function Home() {
             });
     }
 
+    function handleSave (event) {
+        event.preventDefault();
+    
+        API.saveBook({
+            title: this.title,
+            author: this.author[0],
+            synopsis: this.description,
+            preview: this.link,
+            thumbnail: this.thumbnail
+          })
+            .then(res => console.log("BOOK SAVED?"))
+            .catch(err => console.log(err));
+    }
+
     return (
         <div>
             <SearchJumbo />
             <SearchBar handleSearch={handleSearch} handleInputChange={handleInputChange} />
-            <ResultsSection books={books} />
+            <ResultsSection books={books} handleSave={handleSave} />
         </div>
     )
 }

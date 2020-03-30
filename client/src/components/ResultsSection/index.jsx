@@ -14,6 +14,7 @@ function ResultsSection(props) {
                         description={book.synopsis ? book.synopsis : book.volumeInfo.description}
                         link={book.preview ? book.preview : book.volumeInfo.previewLink}
                         thumbnail={book.thumbnail ? book.thumbnail : book.volumeInfo.imageLinks.thumbnail ? book.volumeInfo.imageLinks.thumbnail : "https://picsum.photos/200"}
+                        handleSave={props.handleSave}
                     />
                 )
             })
