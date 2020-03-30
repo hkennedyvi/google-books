@@ -8,24 +8,6 @@ function Home() {
 
     const [books, setBooks] = useState([]);
     const [searchTerm, setSearchTerm] = useState();
-    // const [newBook, setNewBook] = useState();
-
-    // useEffect(() => {
-    //     loadBooks()
-    // }, [])
-
-    // // Loads all books and sets them to books
-    // function loadBooks() {
-    //     API.populateLibrary()
-    //         .then(res => {
-
-    //             // console.log(res.data.items);
-    //             setBooks(res.data.items);
-    //             // console.log(books);
-    //         }
-    //         )
-    //         .catch(err => console.log(err));
-    // };
 
     function handleInputChange(event) {
         const { value } = event.target;
@@ -50,7 +32,7 @@ function Home() {
             preview: this.link,
             thumbnail: this.thumbnail
           })
-            .then(res => console.log("BOOK SAVED?"))
+            .then(res => console.log("BOOK SAVED"))
             .catch(err => console.log(err));
     }
 
