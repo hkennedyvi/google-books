@@ -12,6 +12,11 @@ function Saved() {
     }, [])
 
     function loadSavedBooks() {
+
+        API.getBooks().then(res => {
+            console.log(res);
+        });
+
         API.populateLibrary()
             .then(res => {
                 setBooks(res.data.items);
