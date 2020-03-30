@@ -17,7 +17,7 @@ function ResultsCard(props) {
                     onClick={(event) => {props.handleSave(event)}}>
                         SAVE
                         </button>
-                    <a href={props.link}><button className="uk-button-danger">PREVIEW</button></a>
+                    <a href={props.link} target="_blank"><button className="uk-button-danger">PREVIEW</button></a>
                 </div>
             </div>
         </div>

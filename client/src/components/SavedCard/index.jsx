@@ -17,7 +17,7 @@ function SavedCard(props) {
                 onClick={(event)=>{props.handleDelete(event)}}
                 id={props.id}
                 >DELETE</button>
-                <a href={props.link}><button className="uk-button-danger">PREVIEW</button></a>
+                <a href={props.link} target="_blank"><button className="uk-button-danger">PREVIEW</button></a>
             </div>
         </div>
     </div>
