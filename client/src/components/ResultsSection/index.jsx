@@ -13,7 +13,7 @@ function ResultsSection(props) {
                         author={book.volumeInfo.authors}
                         description={book.volumeInfo.description}
                         link={book.volumeInfo.previewLink}
-                        thumbnail={book.thumbnail ? book.volumeInfo.imageLinks.thumbnail : "https://picsum.photos/200"}
+                        thumbnail={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "https://picsum.photos/200"}
                         handleSave={props.handleSave}
                     />
                 )

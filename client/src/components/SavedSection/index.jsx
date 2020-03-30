@@ -5,7 +5,7 @@ import SavedCard from '../SavedCard';
 function SavedSection(props) {
 console.log(props.books);
     return (
-        <div id="results-main" className="uk-section">
+        <div id="saved-main" className="uk-section">
             {props.books.map(book => {
                 return (
                     <SavedCard

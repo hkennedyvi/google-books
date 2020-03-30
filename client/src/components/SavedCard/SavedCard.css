@@ -1,3 +1,9 @@
+.book-card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .uk-button-primary {
     padding: 20px;
     width: 150px;
