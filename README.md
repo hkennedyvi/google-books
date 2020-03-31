@@ -1,6 +1,6 @@
 # I'm Already Booked
 
-See it live: [📖](https://imalreadybooked.herokuapp.com/)
+## See it live: [📖](https://imalreadybooked.herokuapp.com/)
 
 * A full-stack application for building a book library. 
 
