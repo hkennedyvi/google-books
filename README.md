@@ -14,8 +14,7 @@
 
 ## How it Looks:
 
-<img src="./readme_assets/google_books_1.png" width="400"> 
-<img src="./readme_assets/google_books_2.png" width="400">
+<img src="./readme_assets/google_books_1.png" width="400"> <img src="./readme_assets/google_books_2.png" width="400">
 
 ## Authors
 
